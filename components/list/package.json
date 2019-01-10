@@ -1,0 +1,19 @@
+{
+	"name": "complate-hello-world-list",
+	"version": "0.1.0",
+	"description": "Stupid list component.",
+	"author": {
+		"name": "Andreas Krüger",
+		"email": "andreas.krueger@innoq.com",
+		"url": "https://www.famsik.de/"
+	},
+	"license": "Apache-2.0",
+	"main": "src/list.jsx",
+	"dependencies": {
+		"complate-stream": "0.x"
+	},
+	"devDependencies": {
+		"eslint-config-fnd-jsx": "^1.6.0",
+		"faucet-pipeline-jsx": "^1.1.1"
+	}
+}
