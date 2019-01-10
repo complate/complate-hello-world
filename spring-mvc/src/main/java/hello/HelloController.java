@@ -11,6 +11,6 @@ public class HelloController {
     @GetMapping("/")
     public String hello(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
         model.addAttribute("name", name);
-        return "greeting";
+        return "SiteIndex";
     }
 }

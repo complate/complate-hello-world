@@ -1,0 +1,12 @@
+{
+    "scripts": {
+        "start": "faucet --compact"
+    },
+    "dependencies": {
+        "complate-stream": "^0.16.4",
+        "package-lock.json": "^1.0.0"
+    },
+    "devDependencies": {
+        "faucet-pipeline-jsx": "^1.1.1"
+    }
+}
