@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "start": "faucet --compact"
+        "compile": "faucet --compact"
     },
     "dependencies": {
         "complate-stream": "^0.16.4",
