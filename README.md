@@ -9,19 +9,13 @@ What the components do
 
 ### One trivial component
 
-Simply renders a string in a paragraph
+Renders a <span style="background-color:red;">red paragraph</span>.
 
 
 ### One less trivial component
 
-* It displays a list (a plain `<ul>`)
-
-* One item in the list is generated locally, by the component itself
-
-* One item comes from the environment using it
-
-* One item comes from the trivial component (but the less trivial component
-  doesn't know that)
+It displays a list (a plain `<ul>`), with the items in the list
+coming from various sources.
 
 How to compile the components
 -----------------------------
@@ -58,8 +52,6 @@ cd spring-mvc
 ./mvnw spring-boot:run
 ```
 
-### Note
-
-We use the components unchanged, but our top-level root script
-`[index.js](spring-mvc/src/main/views/index.js)` contains a call to `Java.from`
-translating a Java `Collection` to a JavaScript `Array`.
+Note: While the Spring example uses the components unchanged, its top-level
+script [`index.js`](spring-mvc/src/main/views/index.js) contains a call to
+`Java.from`, which translates a Java `Collection` to a JavaScript `Array`.
