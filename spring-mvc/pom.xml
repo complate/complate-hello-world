@@ -61,10 +61,12 @@
 					</execution>
 					<execution>
 						<!--
-							This is only needed to activate local components,
-							that have before been made available via
+							This is (only) needed to activate local components,
+							that have before been made available by calling
 							npm link
-							(in those components' directory).
+							in those components' directories,
+							so the components (or their versions to be used)
+							need not have been published.
 						-->
 						<id>install-linked-components</id>
 						<goals>
