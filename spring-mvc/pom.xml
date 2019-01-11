@@ -59,6 +59,28 @@
 							</arguments>
 						</configuration>
 					</execution>
+					<execution>
+						<!--
+							This is only needed to activate local components,
+							that have before been made available via
+							npm link
+							(in those components' directory).
+						-->
+						<id>install-linked-components</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<phase>generate-resources</phase>
+						<configuration>
+							<workingDirectory>${basedir}</workingDirectory>
+							<executable>npm</executable>
+							<arguments>
+								<argument>link</argument>
+								<argument>complate-hello-world-p</argument>
+								<argument>complate-hello-world-list</argument>
+							</arguments>
+						</configuration>
+					</execution>
 
 					<execution>
 						<id>compile-complate-views</id>

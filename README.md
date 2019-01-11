@@ -45,3 +45,11 @@ npm install
 npm link complate-hello-world-p complate-hello-world-list
 npm start
 ```
+
+Running the Spring MVC example
+------------------------------
+
+```
+cd spring-mvc
+mvn spring-boot:run
+```
