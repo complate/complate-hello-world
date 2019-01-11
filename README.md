@@ -49,7 +49,17 @@ npm start
 Running the Spring MVC example
 ------------------------------
 
+Have Java installed. (We successfully used Oracle's 1.8.0_171, OpenJDK 1.8.0_181
+and OpenJDK 11.0.1, and expect these and any in between to work for you as well.)
+
+
 ```
 cd spring-mvc
-mvn spring-boot:run
+./mvnw spring-boot:run
 ```
+
+### Note
+
+We use the components unchanged, but our top-level root script
+`[index.js](spring-mvc/src/main/views/index.js)` contains a call to `Java.from`
+translating a Java `Collection` to a JavaScript `Array`.
